@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "empNo": "EMP1001",
+    "name": "张伟",
+    "deptId": 1,
+    "positionId": 1
+  },
+  {
+    "id": 2,
+    "empNo": "EMP1002",
+    "name": "李娜",
+    "deptId": 2,
+    "positionId": 2
+  },
+  {
+    "id": 3,
+    "empNo": "EMP1003",
+    "name": "王强",
+    "deptId": 3,
+    "positionId": 3
+  },
+  {
+    "id": 4,
+    "empNo": "EMP1004",
+    "name": "赵敏",
+    "deptId": 5,
+    "positionId": 4
+  },
+  {
+    "id": 5,
+    "empNo": "EMP1005",
+    "name": "刘洋",
+    "deptId": 4,
+    "positionId": 5
+  }
+]

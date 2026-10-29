@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "positionName": "总经理"
+  },
+  {
+    "id": 2,
+    "positionName": "人事主管"
+  },
+  {
+    "id": 3,
+    "positionName": "技术总监"
+  },
+  {
+    "id": 4,
+    "positionName": "Java开发工程师"
+  },
+  {
+    "id": 5,
+    "positionName": "前端开发工程师"
+  },
+  {
+    "id": 6,
+    "positionName": "运营专员"
+  }
+]

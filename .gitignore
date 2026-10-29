@@ -6,4 +6,4 @@ target/
 .classpath
 .settings/
 *.log
-data/
+/data/
