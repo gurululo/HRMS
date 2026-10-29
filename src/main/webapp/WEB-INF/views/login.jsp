@@ -33,7 +33,7 @@
         <div class="form-group">
             <label for="username"><span class="glyphicon glyphicon-user"></span> 管理员账号</label>
             <input type="text" class="form-control input-lg" id="username" name="username"
-                   value="${username != null ? username : 'admin'}" placeholder="请输入管理员用户名" required autofocus>
+                   placeholder="请输入管理员用户名" required autofocus>
         </div>
         <div class="form-group">
             <label for="password"><span class="glyphicon glyphicon-lock"></span> 登录密码</label>
@@ -46,9 +46,6 @@
             </button>
         </div>
     </form>
-    <div style="margin-top: 20px; font-size: 12px; color: #888; text-align: center;">
-        默认账户: admin / admin123
-    </div>
 </div>
 
 <script src="<%=path%>/static/js/jquery-1.12.4.min.js"></script>
