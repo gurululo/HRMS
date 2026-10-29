@@ -1,9 +1,52 @@
+# Maven build outputs
 target/
+build/
+dist/
 *.class
+*.jar
+*.war
+*.ear
+
+# Runtime data directory (preserves initial templates in src/main/resources/data)
+/data/
+
+# Logs
+*.log
+log/
+logs/
+
+# IDE and Editors
 .idea/
 *.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
 .project
 .classpath
-.settings/
-*.log
-/data/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Environment and sensitive files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Agent and tool runtime artifacts
+.zcode/
+.agents/
+.claude/
+.cursor/
+*.atif
+*.session
