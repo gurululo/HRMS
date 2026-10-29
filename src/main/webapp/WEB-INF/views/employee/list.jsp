@@ -26,11 +26,11 @@
     <form action="${pageContext.request.contextPath}/employee/list" method="get" class="form-inline">
         <div class="form-group" style="margin-right: 15px;">
             <label for="empNo">员工编号：</label>
-            <input type="text" class="form-control" id="empNo" name="empNo" value="${empNo}" placeholder="输入工号">
+            <input type="text" class="form-control" id="empNo" name="empNo" value="${empNo}" placeholder="支持工号检索">
         </div>
         <div class="form-group" style="margin-right: 15px;">
             <label for="name">姓名：</label>
-            <input type="text" class="form-control" id="name" name="name" value="${name}" placeholder="输入姓名">
+            <input type="text" class="form-control" id="name" name="name" value="${name}" placeholder="支持姓名模糊查询">
         </div>
         <div class="form-group" style="margin-right: 15px;">
             <label for="deptId">所属部门：</label>
@@ -71,7 +71,7 @@
             <td><code>${emp.empNo}</code></td>
             <td><strong>${emp.name}</strong></td>
             <td>
-                <span class="label label-info">${emp.deptName}</span>
+                <span class="label ${emp.deptName == '未分配' ? 'label-default' : 'label-info'}">${emp.deptName}</span>
             </td>
             <td>${emp.positionName}</td>
             <td style="text-align: center;">

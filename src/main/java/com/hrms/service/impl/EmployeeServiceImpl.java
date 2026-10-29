@@ -83,16 +83,20 @@ public class EmployeeServiceImpl implements EmployeeService {
         List<Employee> all = employeeDao.selectAll();
         enrichEmployeeInfo(all);
 
+        // 维护调整：过滤首尾空格并支持工号不区分大小写检索
+        String trimmedEmpNo = StringUtils.trimToNull(empNo);
+        String trimmedName = StringUtils.trimToNull(name);
+
         List<Employee> filtered = new ArrayList<Employee>();
         for (Employee e : all) {
             boolean match = true;
-            if (StringUtils.isNotBlank(empNo)) {
-                if (e.getEmpNo() == null || !e.getEmpNo().contains(empNo)) {
+            if (trimmedEmpNo != null) {
+                if (e.getEmpNo() == null || !e.getEmpNo().toLowerCase().contains(trimmedEmpNo.toLowerCase())) {
                     match = false;
                 }
             }
-            if (match && StringUtils.isNotBlank(name)) {
-                if (e.getName() == null || !e.getName().contains(name)) {
+            if (match && trimmedName != null) {
+                if (e.getName() == null || !e.getName().contains(trimmedName)) {
                     match = false;
                 }
             }
